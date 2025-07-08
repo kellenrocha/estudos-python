@@ -24,7 +24,7 @@ def Subtracao():
     for i in range(1, elementos + 1): 
         lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
 
-    Tsubtracao = lista_elementos[0]
+    Tsubtracao = lista_elementos[0] #ja recebe o primeiro elemento
     for x in lista_elementos[1:]: #itera a partir do segundo elemento
         Tsubtracao -= x
     print('Total da Subtração: ', Tsubtracao)
@@ -40,6 +40,20 @@ def Multiplicacao():
     for x in lista_elementos[1:]:
         Tmultiplicacao *= x
     print('Total da Multiplicação: ', Tmultiplicacao)
+
+def Divisao():
+    lista_elementos = []
+    elementos = numElementos()
+
+    for i in range(1, elementos + 1):
+        lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
+
+    Tdivisao = lista_elementos[0]
+    for x in lista_elementos[1:]:
+        Tdivisao /= x
+    
+    print('Total da Divisão: ', Tdivisao)
+
 #--------------------------------------------------------------------------------------
 
 
@@ -61,7 +75,7 @@ elif operacao == 2:
 elif operacao == 3: 
     Multiplicacao()
 elif operacao == 4:
-    print('Divisão')
+    Divisao()
 else: 
     print('Entrada inválida')
 
