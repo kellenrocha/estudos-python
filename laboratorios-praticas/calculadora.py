@@ -11,25 +11,34 @@ def Soma():
     lista_elementos = []
     elementos = numElementos()
         
-    for i in range(1, elementos + 1):
+    for i in range(1, elementos + 1): #começar do 1º e ir um a mais, se o usuario digitar 3 irá [1,2,+1]
         lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
 
-    Tsoma = 0
-    for x in lista_elementos:
-        Tsoma = Tsoma + x
+    # Tsoma = 0
+    # for x in lista_elementos:
+    #     Tsoma = Tsoma + x
+    Tsoma = sum(lista_elementos)
     print('Total da Soma: ', Tsoma)
 
 def Subtracao():
     lista_elementos = []
     elementos = numElementos()
         
-    for i in range(1, elementos + 1):
+    for i in range(1, elementos + 1): 
         lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
 
     Tsubtracao = lista_elementos[0]
     for x in lista_elementos[1:]: #itera a partir do segundo elemento
         Tsubtracao = Tsubtracao - x
     print('Total da Subtração: ', Tsubtracao)
+
+def Multiplicacao():
+    lista_elementos = []
+    elementos = numElementos()
+
+    for i in range(1, elementos + 1):
+        lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
+
 
 #--------------------------------------------------------------------------------------
 
