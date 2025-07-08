@@ -1,17 +1,23 @@
-def Soma():
+def numElementos():
     lista_elementos = []
-    elementos = int(input('Digite a quantidade de elementos da Soma: '))
-    
+    elementos = int(input('Digite a quantidade de elementos da operação: '))
+
     if elementos < 2:
         print('Para realizar a operação é necessário mais de um valor... encerrando ')
     else:
-        for i in range(1, elementos + 1):
-            lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
+        return elementos
 
-        Tsoma = 0
-        for x in lista_elementos:
-            Tsoma = Tsoma + x
-        print('Total da Soma: ', Tsoma)
+def Soma():
+    lista_elementos = []
+    elementos = numElementos()
+        
+    for i in range(1, elementos + 1):
+        lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
+
+    Tsoma = 0
+    for x in lista_elementos:
+        Tsoma = Tsoma + x
+    print('Total da Soma: ', Tsoma)
 
 def Subtracao():
     lista_elementos = []
