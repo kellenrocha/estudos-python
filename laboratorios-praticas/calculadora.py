@@ -21,18 +21,15 @@ def Soma():
 
 def Subtracao():
     lista_elementos = []
-    elementos = int(input('Digite a quantidade de elementos da Subtração: '))
-    
-    if elementos < 2:
-        print('Para realizar a operação é necessário mais de um valor... encerrando ')
-    else:
-        for i in range(1, elementos + 1):
-            lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
+    elementos = numElementos()
+        
+    for i in range(1, elementos + 1):
+        lista_elementos.append(int(input(f'Digite o {i} º valor: ')))
 
-        Tsubtracao = lista_elementos[0]
-        for x in lista_elementos[1:]: #itera a partir do segundo elemento
-            Tsubtracao = Tsubtracao - x
-        print('Total da Subtração: ', Tsubtracao)
+    Tsubtracao = lista_elementos[0]
+    for x in lista_elementos[1:]: #itera a partir do segundo elemento
+        Tsubtracao = Tsubtracao - x
+    print('Total da Subtração: ', Tsubtracao)
 
 #--------------------------------------------------------------------------------------
 
